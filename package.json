@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "hotelrooms",
+  "version": "1.0.0",
+  "description": "Learnable task X\r ---",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha tests/server.test.cjs"
+  },
+  "keywords": [],
+  "author": "Nixx RedX",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0",
+    "winston": "^3.12.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0",
+    "sinon": "^17.0.1",
+    "supertest": "^6.3.4"
+  }
+}
