@@ -1,6 +1,13 @@
-import { model, Schema } from 'mongoose'
+import { Schema, model, Document, Types } from 'mongoose';
 
-const roomSchema = new Schema({
+interface IRoom extends Document {
+    name: string;
+    roomType: Types.ObjectId;
+    price: number;
+    deleted: boolean;
+}
+
+const roomSchema = new Schema<IRoom>({
     name: {
         type: String,
         required: true
@@ -18,6 +25,6 @@ const roomSchema = new Schema({
         type: Boolean,
         default: false
     }
-}, {timestamps: true})
+}, {timestamps: true});
 
-export default model('Room', roomSchema)
+export default model<IRoom>('Room', roomSchema);
