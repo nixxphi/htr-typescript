@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import roomTypeController from '../controllers/roomType.controller.js';
-import authenticate from "../middlewares/authenticate.middleware.js"
-import validate from '../middlewares/validate.middleware.js';
-import authorizeAdmin from '../middlewares/authorize.middleware.js';
-import { CreateRoomTypeSchema, EditRoomTypeSchema } from '../validations/roomType.validation.js';
+import roomTypeController from '../controllers/roomType.controller.ts';
+import authenticate from "../middlewares/authenticate.middleware.ts"
+import validate from '../middlewares/validate.middleware.ts';
+import authorizeAdmin from '../middlewares/authorize.middleware.ts';
+import { CreateRoomTypeSchema, EditRoomTypeSchema } from '../validations/roomType.validation.ts';
 
 const roomTypeRouter = Router();
 
