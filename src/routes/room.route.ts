@@ -1,7 +1,7 @@
-import { Router } from 'express'; 
-import roomController from '../controllers/room.controller.js';
-import validate from '../middlewares/validate.middleware.js';
-import { CreateRoomSchema } from '../validations/room.validation.js';
+import { Router } from 'express';
+import roomController from '../controllers/room.controller.ts';
+import validate from '../middlewares/validate.middleware.ts';
+import { CreateRoomSchema } from '../validations/room.validation.ts';
 
 // CREATE A NEW ROUTER INSTANCE
 const roomRouter = Router();
