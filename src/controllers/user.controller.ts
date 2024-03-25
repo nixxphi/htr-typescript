@@ -1,22 +1,23 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import User from '../models/user.model.js';
+import { Request, Response } from 'express';
+import User from '../models/user.model.ts';
 
 // Controller function for user registration
-export const register = async (req, res) => {
+export const register = async (req: Request, res: Response) => {
   try {
     const { username, password } = req.body;
 
     // Check if user already exists
     const existingUser = await User.findOne({ username });
     if (existingUser) {
-      return res.status(400).json({ message: 'Username already exists, rename thineself human.' });
+      return res.status(400).json({ message: 'Username already exists, rename thyself human.' });
     }
 
     // Hash the password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // To create a new user
+    // Create a new user
     const newUser = new User({ username, password: hashedPassword });
     await newUser.save();
 
@@ -28,7 +29,7 @@ export const register = async (req, res) => {
 };
 
 // Function for user login
-export const login = async (req, res) => {
+export const login = async (req: Request, res: Response) => {
   try {
     const { username, password } = req.body;
 
