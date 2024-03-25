@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["dom", "es2015"],  // Include common libraries for DOM and ES2015 features
+    "sourceMap": true,         // Generate source maps for better debugging
+    "strictNullChecks": true,  // Ensure strict null checks for better type safety
+    "strictFunctionTypes": true, // Enable strict function types for better type inference
+    "strictPropertyInitialization": true // Ensure all class properties are initialized
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
