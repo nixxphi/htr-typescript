@@ -2,7 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import {
   verifyToken,
   checkTokenValidity
-} from '../utils/token.util.ts';
+} from '../utils/token.utils.ts';
 import { userService } from '../services/index.service.ts';
 
 export default async (
