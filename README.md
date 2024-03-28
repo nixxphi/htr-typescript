@@ -3,7 +3,7 @@
 
 # Hotel Rooms Management System
 
-This project is a Hotel Rooms Management System built with Node.js, Express.js, and MongoDB. It provides a backend API for managing rooms and room types in a hotel.
+This project is a Hotel Rooms Management System built with Typescript, Express.js, and MongoDB. It provides a backend API for managing rooms and room types in a hotel.
 
 ## Features
 
@@ -14,7 +14,6 @@ This project is a Hotel Rooms Management System built with Node.js, Express.js, 
 - Integration with MongoDB database, express and Winston logger.
 
 ## Installation
-The API key is "learnable.task.X"
 
 1. Clone the repository:
    ```bash
@@ -23,18 +22,11 @@ The API key is "learnable.task.X"
 
 2. Install dependencies:
    ```bash
-   npm install pino
-   npm install mongoose
-   npm install express
-   npm install nodemon
-   npm install chai sinon --save-dev
-   npm install mocha
-   npm install supertest
-   npm install bcrypt jsonwebtoken joi
+   npm install
    ```
 3. The dotenv file includes the following
    - PORT=5000
-   - MONGODB_URI=mongodb+srv://nixxphi:___________@redcluster.pixh5su.mongodb.net/?retryWrites=true&w=majority&appName=Redcluster
+   -MONGODB_URI=mongodb+srv://nixxphi:___________@redcluster.pixh5su.mongodb.net/?retryWrites=true&w=majority&appName=Redcluster
 
 4. Start the server:
    ```bash
